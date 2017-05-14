@@ -1,0 +1,13 @@
+<div class="article-list">
+  <!-- 文章列表 -->
+  <h2 style="color: #2bbc8a">2017</h2>
+  <ul style="list-style-type: none;margin-left: 30px;margin-top: 30px">
+    <li style="margin-bottom: 10px" *ngFor="let article of articles">
+      <span style="color: #666;font-size: 17px">{{article.create_time}}</span>
+      <!-- TODO:鼠标放上去加下划线 -->
+      <a [routerLink]="['1']"
+         style="color: #c9cacc;font-size: 17px;text-decoration: none;margin-left: 20px">{{article.title}}</a>
+      <span style="float: right;color: #666;font-size: 17px"><span style="color: darkcyan;font-size: 24px">{{article.click_num}}</span> 次点击</span>
+    </li>
+  </ul>
+</div>

@@ -1,8 +1,16 @@
-<header>
-  <nav>
-    <app-navbar></app-navbar>
-  </nav>
+<!-- 导航头 -->
+<header class="blog-header">
+  <app-header></app-header>
 </header>
-<footer>
+
+<!-- 文章列表 -->
+<div layout="row" layout-align="center">
+  <div flex-gt-xs="40">
+    <app-article-list></app-article-list>
+  </div>
+</div>
+
+<!-- 底部 -->
+<div layout="row" layout-align="center">
   <app-footer></app-footer>
-</footer>
+</div>

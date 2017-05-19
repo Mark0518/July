@@ -14,12 +14,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'article',
+    'category',
+    'tag',
+    'user',
+    'comment',
+    'july'
 ]
 
 MIDDLEWARE = [
@@ -93,6 +98,13 @@ USE_TZ = False  # 不适用UTC
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 
+# Upload file
+MEDIA_URL = '/uploads/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
+# Default User tab
+AUTH_USER_MODEL = 'user.UserProfile'
+
 # Django rest framework
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -100,3 +112,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     )
 }
+
+# Email
+EMAIL_HOST = "smtp.sina.com"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "anshengme@sina.com"
+EMAIL_HOST_PASSWORD = "ansheng.me"
+EMAIL_USE_TLS = False
+EMAIL_FROM = "anshengme@sina.com"

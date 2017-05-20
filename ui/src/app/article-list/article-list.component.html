@@ -1,13 +1,35 @@
 <div class="article-list">
-  <!-- 文章列表 -->
-  <h2 style="color: #2bbc8a">2017</h2>
-  <ul style="list-style-type: none;margin-left: 30px;margin-top: 30px">
-    <li style="margin-bottom: 10px" *ngFor="let article of articles">
-      <span style="color: #666;font-size: 17px">{{article.create_time}}</span>
-      <!-- TODO:鼠标放上去加下划线 -->
-      <a [routerLink]="['1']"
-         style="color: #c9cacc;font-size: 17px;text-decoration: none;margin-left: 20px">{{article.title}}</a>
-      <span style="float: right;color: #666;font-size: 17px"><span style="color: darkcyan;font-size: 24px">{{article.click_num}}</span> 次点击</span>
-    </li>
-  </ul>
+  <article >
+    <div class="article-header">
+      <h2><a href="#">Django REST framework Token认证不过期的解决方法</a></h2>
+      <small>
+        <span>发布时间：2017-05-20 13:47:12</span>
+        <span>分类：JavaScript</span>
+        <span>浏览（43）</span>
+        <span>评论（3）</span>
+      </small>
+    </div>
+    <div  class="article-body">
+<td-markdown>
+
+```bash
+#!/bin/bash
+
+###### CONFIG
+ACCEPTED_HOSTS="/root/.hag_accepted.conf"
+BE_VERBOSE=false
+
+if [ "$UID" -ne 0 ]
+then
+ echo "Superuser rights required"
+ exit 2
+fi
+```
+
+</td-markdown>
+    </div>
+    <div class="article-more">
+      <a href="#">阅读全文</a>
+    </div>
+  </article>
 </div>

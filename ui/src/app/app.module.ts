@@ -20,6 +20,8 @@ import {CovalentMarkdownModule} from '@covalent/markdown';
 import {CovalentDynamicFormsModule} from '@covalent/dynamic-forms';
 import {HeaderComponent} from './header/header.component';
 import {ArticleListComponent} from './article-list/article-list.component';
+import { RightInfoComponent } from './right-info/right-info.component';
+import { CovalentChipsModule } from '@covalent/core';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {ArticleListComponent} from './article-list/article-list.component';
     NotFoundComponent,
     FooterComponent,
     HeaderComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    RightInfoComponent
   ],
   imports: [
     BrowserModule,

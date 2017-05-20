@@ -24,7 +24,9 @@
         "../node_modules/@covalent/core/common/platform.scss",
         "../src/theme.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/showdown/dist/showdown.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

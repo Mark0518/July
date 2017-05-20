@@ -1,0 +1,79 @@
+.right-info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.right-info  > .card {
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    display: block;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.right-info > .card  > .me{
+    padding: 40px 30px 30px;
+    text-align: center;
+}
+
+.right-info > .card  > .nav{
+    padding: 40px 30px 30px;
+}
+
+.right-info > .card  > .me{
+    padding: 40px 30px 30px;
+    text-align: center;
+}
+
+.right-info > .card  > .me > h2 {
+    color: #2e353b;
+    margin: 20px 0;
+}
+
+.right-info >.card > .me > small {
+    color: #9c9c9c;
+}
+
+.right-info > .card  > .category{
+    padding: 40px 30px 30px;
+}
+
+.right-info > .card  > .category> hr{
+    margin: 10px 0;
+}
+
+.right-info > .card  > .tag {
+    padding: 40px 30px 30px;
+}
+.right-info > .card  > .tag> .body {
+    font-size: 13px;
+}
+
+.right-info > .card  > .tag > .body > a {
+    color: #546E7A;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 2px solid darkgray;
+    margin: 0 2px 7px;
+    text-decoration: none;
+}
+
+.right-info > .card  > .tag> hr{
+    margin: 10px 0;
+}
+
+.right-info > .card  > .links {
+    padding: 40px 30px 30px;
+}
+
+.right-info > .card  > .links > hr{
+    margin: 10px 0;
+}
+
+.right-info > .card  > .comments {
+    padding: 40px 30px 30px;
+}
+
+.right-info > .card  > .comments > hr{
+    margin: 10px 0;
+}

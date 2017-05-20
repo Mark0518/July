@@ -40,7 +40,6 @@
 
 |URL|描述|
 |:--|:--|
-|`/auth/code/`|发送验证码|
 |`/links/`|获取友情链接|
 |`/admin/links/`|后台友链列表 or 添加友链|
 |`/admin/link/UID/`|详情 or 修改|

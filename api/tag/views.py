@@ -1,7 +1,8 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import status
+from rest_framework.authentication import TokenAuthentication, BasicAuthentication
 from rest_framework.exceptions import APIException
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -9,7 +10,7 @@ from .models import *
 from .serializers import *
 
 __all__ = [
-    'TagView',
+    'TagsView',
     'TagListView',
     'TagDetailView'
 ]
@@ -17,7 +18,7 @@ __all__ = [
 
 # Create your views here.
 
-class TagView(APIView):
+class TagsView(APIView):
     permission_classes = (AllowAny,)
 
     def get(self, request):
@@ -25,7 +26,8 @@ class TagView(APIView):
 
 
 class TagListView(APIView):
-    permission_classes = (AllowAny,)
+    authentication_classes = (TokenAuthentication, BasicAuthentication,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = TagListSerializer
 
     def get(self, request):
@@ -44,7 +46,8 @@ class TagListView(APIView):
 
 
 class TagDetailView(APIView):
-    permission_classes = (AllowAny,)
+    authentication_classes = (TokenAuthentication, BasicAuthentication,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = TagDetailSerializer
 
     def get(self, request, uid):

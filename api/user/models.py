@@ -14,7 +14,7 @@ class UserProfile(AbstractUser):
 
 
 class EmailCaptchaCode(models.Model):
-    code = models.CharField(max_length=20, unique=True)
+    code = models.IntegerField()
     email = models.EmailField(max_length=128)
     send_time = models.DateTimeField(auto_now_add=True)
     status = models.BooleanField(default=True)

@@ -85,7 +85,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 
-LANGUAGE_CODE = 'zh-hans'  # 系统语言
+LANGUAGE_CODE = 'en-us'  # 系统语言
 
 TIME_ZONE = 'Asia/Shanghai'  # 时区
 

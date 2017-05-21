@@ -10,26 +10,34 @@
       </small>
     </div>
     <div  class="article-body">
-<td-markdown>
+        <td-markdown>
 
-```bash
-#!/bin/bash
+        ```bash
+        #!/bin/bash
 
-###### CONFIG
-ACCEPTED_HOSTS="/root/.hag_accepted.conf"
-BE_VERBOSE=false
+        ###### CONFIG
+        ACCEPTED_HOSTS="/root/.hag_accepted.conf"
+        BE_VERBOSE=false
 
-if [ "$UID" -ne 0 ]
-then
- echo "Superuser rights required"
- exit 2
-fi
-```
+        if [ "$UID" -ne 0 ]
+        then
+        echo "Superuser rights required"
+        exit 2
+        fi
+        ```
 
-</td-markdown>
+        </td-markdown>
     </div>
     <div class="article-more">
       <a href="#">阅读全文</a>
     </div>
   </article>
+
+<!-- 分页 -->
+<div layout="row" layout-align="center">
+    <td-paging-bar #pagingBar [pageSizeAllText]="pageSizeAllText" [pageSizeAll]="true" [pageSizes]="pageSizes" 
+                [initialPage]="initialPage" [firstLast]="firstLast" [pageSize]="pageSize" [total]="total" (change)="change($event)">
+      <span td-paging-bar-label hide-xs>Row per page:</span>{{pagingBar.range}} <span hide-xs>of {{pagingBar.total}}</span>
+  </td-paging-bar>
+</div>
 </div>

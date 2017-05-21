@@ -77,3 +77,14 @@
 .right-info > .card  > .comments > hr{
     margin: 10px 0;
 }
+
+.register > div > .email,.retype-password,.password {
+    width: 100%;
+}
+
+.login > div > .email,.password {
+    width: 100%;
+}
+.rest-password > div > .email,.password{
+    width: 100%;
+}

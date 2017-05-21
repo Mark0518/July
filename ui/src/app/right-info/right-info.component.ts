@@ -21,17 +21,21 @@ export class RightInfoComponent implements OnInit {
   ];
 
   private links = [
-    {"name":"算法之道","desc":"业余机器学习、Python和算法爱好者","url":"#"},
-    {"name":"安生","desc":"大好时光！","url":"#"},
+    {'name': '算法之道', 'desc': '业余机器学习、Python和算法爱好者', 'url': '#'},
+    {'name': '安生', 'desc': '大好时光！', 'url': '#'}
   ];
 
-  private categorys =[
-    {'name':'Python','count':'200','url':'#'},
-    {'name':'Linux','count':'320','url':'#'},
-    {'name':'Django','count':'35','url':'#'},
-    {'name':'PHP','count':'35','url':'#'},
-  ]
+  private categorys = [
+      {'name': 'Python', 'count': '200', 'url': '#'},
+      {'name': 'Linux', 'count': '320', 'url': '#'},
+      {'name': 'Django', 'count': '35', 'url': '#'},
+      {'name': 'PHP', 'count': '35', 'url': '#'}
+    ];
+
   constructor() { }
   ngOnInit() {
+  }
+  isShow() {
+    console.log('Hello');
   }
 }

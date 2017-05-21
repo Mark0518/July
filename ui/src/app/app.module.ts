@@ -22,6 +22,12 @@ import {HeaderComponent} from './header/header.component';
 import {ArticleListComponent} from './article-list/article-list.component';
 import { RightInfoComponent } from './right-info/right-info.component';
 import { CovalentChipsModule } from '@covalent/core';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
+// Material
+import { MaterialModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +37,9 @@ import { CovalentChipsModule } from '@covalent/core';
     FooterComponent,
     HeaderComponent,
     ArticleListComponent,
-    RightInfoComponent
+    RightInfoComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,9 @@ import { CovalentChipsModule } from '@covalent/core';
     CovalentHttpModule.forRoot(),
     CovalentHighlightModule,
     CovalentMarkdownModule,
-    CovalentDynamicFormsModule
+    CovalentDynamicFormsModule,
+    // Material
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

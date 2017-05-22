@@ -3,12 +3,12 @@
   <div class="card">
     <div class="nav">
       <div class="buttons">
-        <button md-button color="primary" (click)="login = !login">登录</button>
-        <button md-button color="primary" (click)="register = !register">注册</button>
-        <button md-button color="primary" (click)="rest_password = !rest_password">找回密码</button>
+        <button md-button color="primary" (click)='isShowLogin()'>登录</button>
+        <button md-button color="primary" (click)='isShowRegister()'>注册</button>
+        <button md-button color="primary" (click)='isShowRestPassword()'>找回密码</button>
       </div>
-
-      <form class="login" *ngIf="login">
+      
+      <form class="login" *ngIf="isShowLoginElement" >
           <div>
             <md-input-container class="email">
               <input mdInput  placeholder="邮箱">
@@ -22,7 +22,7 @@
         <button md-raised-button color="accent">登录</button>
       </form>
 
-      <form class="register" *ngIf="register">
+      <form class="register" *ngIf="isShowRegisterElement">
         <div>
           <md-input-container class="email">
                 <input mdInput  placeholder="邮箱">
@@ -49,7 +49,7 @@
         <button md-raised-button color="accent">注册</button>
       </form>
 
-      <form class="rest-password" *ngIf="rest_password">
+      <form class="rest-password" *ngIf="isShowRestPasswordElement">
           <div>
             <md-input-container class="email">
               <input mdInput  placeholder="邮箱">
@@ -68,7 +68,6 @@
           </div>
         <button md-raised-button color="accent">登录</button>
       </form>
-
     </div>
   </div>
 
@@ -133,4 +132,5 @@
       </md-nav-list>
     </div>
   </div>
+  
 </aside>

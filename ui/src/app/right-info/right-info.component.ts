@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-right-info',
@@ -32,10 +33,29 @@ export class RightInfoComponent implements OnInit {
       {'name': 'PHP', 'count': '35', 'url': '#'}
     ];
 
+  private isShowLoginElement: Boolean = false;
+  private isShowRegisterElement: Boolean = false;
+  private isShowRestPasswordElement: Boolean = false;
+
   constructor() { }
   ngOnInit() {
   }
-  isShow() {
-    console.log('Hello');
+
+  isShowLogin() {
+    this.isShowLoginElement = !this.isShowLoginElement;
+    this.isShowRegisterElement = false;
+    this.isShowRestPasswordElement = false;
+  }
+
+  isShowRegister() {
+    this.isShowRegisterElement = !this.isShowRegisterElement;
+    this.isShowLoginElement = false;
+    this.isShowRestPasswordElement = false;
+  }
+
+  isShowRestPassword() {
+    this.isShowRestPasswordElement = !this.isShowRestPasswordElement;
+    this.isShowLoginElement = false;
+    this.isShowRegisterElement = false;
   }
 }

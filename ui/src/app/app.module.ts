@@ -11,22 +11,22 @@ import {AppComponent} from './app.component';
 import {BlogComponent} from './blog/blog.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {FooterComponent} from './footer/footer.component';
-
-// Covalent
-import {CovalentCoreModule, CovalentLayoutModule} from '@covalent/core';
-import {CovalentHttpModule} from '@covalent/http';
-import {CovalentHighlightModule} from '@covalent/highlight';
-import {CovalentMarkdownModule} from '@covalent/markdown';
-import {CovalentDynamicFormsModule} from '@covalent/dynamic-forms';
 import {HeaderComponent} from './header/header.component';
 import {ArticleListComponent} from './article-list/article-list.component';
 import { RightInfoComponent } from './right-info/right-info.component';
-import { CovalentChipsModule } from '@covalent/core';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+// Covalent
+import { CovalentLayoutModule, CovalentStepsModule, CovalentPagingModule, CovalentMenuModule, CovalentSearchModule } from '@covalent/core';
+// (optional) Additional Covalent Modules imports
+import { CovalentHighlightModule } from '@covalent/highlight';
+import { CovalentMarkdownModule } from '@covalent/markdown';
+import { CovalentDynamicFormsModule } from '@covalent/dynamic-forms';
+
 // Material
 import { MaterialModule } from '@angular/material';
+import { ArticleComponent } from './article/article.component';
 
 
 @NgModule({
@@ -39,7 +39,8 @@ import { MaterialModule } from '@angular/material';
     ArticleListComponent,
     RightInfoComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -49,11 +50,13 @@ import { MaterialModule } from '@angular/material';
     BrowserAnimationsModule,
     // Covalent
     CovalentLayoutModule,
-    CovalentCoreModule,
-    CovalentHttpModule.forRoot(),
+    CovalentStepsModule,
     CovalentHighlightModule,
     CovalentMarkdownModule,
     CovalentDynamicFormsModule,
+    CovalentPagingModule,
+    CovalentMenuModule,
+    CovalentSearchModule,
     // Material
     MaterialModule
   ],

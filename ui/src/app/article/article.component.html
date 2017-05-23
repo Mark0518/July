@@ -1,3 +1,50 @@
-<p>
-  article works!
-</p>
+<!-- 导航头 -->
+<header class="blog-header">
+  <app-header></app-header>
+</header>
+
+<div layout="row" layout-align="center">
+  <div flex-gt-xs="60">
+    <!-- 文章内容 -->
+    <article>
+      <md-card>
+        <md-card-title>Django REST framework Token认证不过期的解决方法</md-card-title>
+        <md-card-subtitle>
+            <small>
+              <span>发布时间：2017-05-20 13:47:12</span>
+              <span>分类：JavaScript</span>
+              <span>浏览（43）</span>
+              <span>评论（3）</span>
+            </small>
+        </md-card-subtitle>
+        <md-divider></md-divider>
+        <md-card-content>
+            <td-markdown>
+            ```bash
+            #!/bin/bash
+
+            ###### CONFIG
+            ACCEPTED_HOSTS="/root/.hag_accepted.conf"
+            BE_VERBOSE=false
+
+            if [ "$UID" -ne 0 ]
+            then
+            echo "Superuser rights required"
+            exit 2
+            fi
+            ```
+            </td-markdown>
+        </md-card-content>
+        <md-divider></md-divider>
+        <md-card-actions>
+          <button md-button class="text-upper">Cancel</button>
+        </md-card-actions>
+      </md-card>
+    </article>
+  </div>
+</div>
+
+<!-- 底部 -->
+<div layout="row" layout-align="center">
+  <app-footer></app-footer>
+</div>

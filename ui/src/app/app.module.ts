@@ -18,7 +18,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 // Covalent
-import { CovalentLayoutModule, CovalentStepsModule, CovalentPagingModule, CovalentMenuModule, CovalentSearchModule } from '@covalent/core';
+import { CovalentLayoutModule, CovalentStepsModule, CovalentPagingModule,
+  CovalentMenuModule, CovalentSearchModule, CovalentMediaModule } from '@covalent/core';
 // (optional) Additional Covalent Modules imports
 import { CovalentHighlightModule } from '@covalent/highlight';
 import { CovalentMarkdownModule } from '@covalent/markdown';
@@ -27,6 +28,7 @@ import { CovalentDynamicFormsModule } from '@covalent/dynamic-forms';
 // Material
 import { MaterialModule } from '@angular/material';
 import { ArticleComponent } from './article/article.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { ArticleComponent } from './article/article.component';
     RightInfoComponent,
     LoginComponent,
     RegisterComponent,
-    ArticleComponent
+    ArticleComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { ArticleComponent } from './article/article.component';
     CovalentPagingModule,
     CovalentMenuModule,
     CovalentSearchModule,
+    CovalentMediaModule,
     // Material
     MaterialModule
   ],

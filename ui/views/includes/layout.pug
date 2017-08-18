@@ -1,0 +1,28 @@
+block page_variable
+    - var title  = '七月 | 让写作更简单'
+    - var description = ''
+    - var author = ''
+    - var keywords = ''
+
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+        title #{title}
+        meta(name='description' content=description)
+        meta(name='author' content=author)
+        meta(name='keywords' content=keywords)
+        block style
+        block head_scripts
+
+    body
+        // Start page loader
+        #page-loader
+            .page-loader__spinner
+        // End page loader
+        include header.pug
+        block content
+        include footer.pug
+        block footer_scripts

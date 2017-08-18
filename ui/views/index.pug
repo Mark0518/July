@@ -1,0 +1,181 @@
+extends includes/layout.pug
+
+block append style
+    link(rel='stylesheet', href='/vendors/material-design-iconic-font-2.2.0/css/material-design-iconic-font.min.css')
+    link(rel='stylesheet', href='/vendors/animate.css-3.5.2/animate.css')
+    link(rel='stylesheet', href='/vendors/select2-4.0.3/css/select2.min.css')
+    link(rel='stylesheet', href='/vendors/rateyo-2.3.2/jquery.rateyo.css')
+    link(rel='stylesheet', href='/vendors/nouislider-8.5.1/nouislider.min.css')
+    link(rel='stylesheet', href='/css/app_1.min.css')
+    link(rel='stylesheet', href='/css/app_2.min.css')
+
+block append head_scripts
+    script(src='/js/page-loader.min.js', async='')
+
+block content
+    section.section
+        .container
+            header.section__title
+                h2 Duis mollisest non commodo luctus nisierat porttito
+                small Vestibulum id ligula porta felis euismod semper
+            .row
+                .col-md-8.col-sm-7
+                    article.card
+                        a.card__img(href='blog-details.html')
+                            img(src='img/demo/blog/1.jpg', alt='')
+                        .card__header
+                            h2 Curabitur blandit tempus porttitor
+                            small by Sam Andersion on 17th July 2016
+                        .card__body
+                            | Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                            .blog-more
+                                a(href='blog-details.html') Read More...
+                    article.card
+                        a.card__img(href='blog-details.html')
+                            img(src='img/demo/blog/2.jpg', alt='')
+                        .card__header
+                            h2 Maecenas sed diam eget risus varius blandit
+                            small by Dave Rubin on 15th July 2016
+                        .card__body
+                            | Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                            .blog-more
+                                a(href='blog-details.html') Read More...
+                    article.card
+                        a.card__img(href='blog-details.html')
+                            img(src='img/demo/blog/3.jpg', alt='')
+                        .card__header
+                            h2 Donec id elit non mi porta gravida at eget metus
+                            small by Malinda Hollaway on 10th July 2016
+                        .card__body
+                            | Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.
+                            .blog-more
+                                a(href='blog-details.html') Read More...
+                    article.card
+                        a.card__img(href='blog-details.html')
+                            img(src='img/demo/blog/4.jpg', alt='')
+                        .card__header
+                            h2 Maecenas faucibus mollis interdum
+                            small by Nate Davis on 5th July 2016
+                        .card__body
+                            | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                            .blog-more
+                                a(href='blog-details.html') Read More...
+                    nav.text-center
+                        ul.pagination
+                            li
+                                a(href='#', aria-label='Previous')
+                                    i.zmdi.zmdi-chevron-left
+                            li.active
+                                a(href='#') 1
+                            li
+                                a(href='#') 2
+                            li
+                                a(href='#') 3
+                            li
+                                a(href='#') 4
+                            li
+                                a(href='#') 5
+                            li
+                                a(href='#', aria-label='Next')
+                                    i.zmdi.zmdi-chevron-right
+                aside.col-md-4.col-sm-5.hidden-xs
+                    .card.subscribe.mdc-bg-orange-300
+                        .subscribe__icon
+                            i.zmdi.zmdi-email
+                        h2 Subscribe for Newsletters
+                        small Curabitur blandit tempus porttitor adipiscing maecenas faucibus mollis interdum
+                        form
+                            .form-group.form-group--light.form-group--float
+                                input.form-control.text-center(type='text', placeholder='Email Address')
+                                i.form-group__bar
+                            button.btn.btn--circle
+                                i.zmdi.zmdi-check.mdc-text-orange-400
+                    .card
+                        .card__header
+                            h2 Picked articles
+                            small Morbi risus porta consectetur vestibulum
+                        .list-group
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img(src='img/demo/listing/thumbs/2.jpg', alt='', width='65')
+                                .media-body.list-group__text
+                                    strong Vivamus sagittis lacus
+                                    small Cras mattis consectetur purus sit amet fermentum
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img(src='img/demo/listing/thumbs/3.jpg', alt='', width='65')
+                                .media-body.list-group__text
+                                    strong Fusce dapibus tellusac
+                                    small Praesent commodo cursus magna, vel scelerisque nisl consectetur et
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img(src='img/demo/listing/thumbs/4.jpg', alt='', width='65')
+                                .media-body.list-group__text
+                                    strong Praesent commodo cursus magnavel scelerisque nisl
+                                    small Maecenas sed diam eget risus varius blandit sit amet non magna
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img(src='img/demo/listing/thumbs/5.jpg', alt='', width='65')
+                                .media-body.list-group__text
+                                    strong Lorem ipsum dolor sitamet
+                                    small Donec ullamcorper nulla non metus auctor fringilla
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img(src='img/demo/listing/thumbs/6.jpg', alt='', width='65')
+                                .media-body.list-group__text
+                                    strong Fusce dapibus accursus commodo
+                                    small Aenean lacinia bibendum nulla sed consectetur
+                            .p-10
+                    .card.tags-list
+                        .card__header
+                            h2 Categories
+                            small Nulla vitae elit libero, a pharetra augue
+                        .card__body
+                            a.tags-list__item(href='') #Sollicitudin
+                            a.tags-list__item(href='') #Ultricies
+                            a.tags-list__item(href='') #Elit
+                            a.tags-list__item(href='') #Crastortor
+                            a.tags-list__item(href='') #Condimentum
+                            a.tags-list__item(href='') #Purus
+                            a.tags-list__item(href='') #Purus
+                            a.tags-list__item(href='') #Egestas
+                            a.tags-list__item(href='') #Loremipsum
+                            a.tags-list__item(href='') #Ridiculus
+                            a.tags-list__item(href='') #Ipsum
+                            a.tags-list__item(href='') #Consectetur
+                    .card
+                        .card__header
+                            h2 Recent comments
+                            small Etiam porta sem malesuada magna mollis
+                        .list-group
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img.img-circle(src='img/demo/people/1.jpg', alt='', width='45', height='45')
+                                .media-body.list-group__text
+                                    strong Sarah Zelermyer Diaz
+                                    small.list-group__text Nullam quis risus eget urna mollis ornare vel eu leo
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img.img-circle(src='img/demo/people/2.jpg', alt='', width='45', height='45')
+                                .media-body.list-group__text
+                                    strong Malinda Hollaway
+                                    small.list-group__text Vestibulum id ligula porta felis euismod semper
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img.img-circle(src='img/demo/people/3.jpg', alt='', width='45', height='45')
+                                .media-body.list-group__text
+                                    strong Celine Diaz
+                                    small.list-group__text Cras justo odio, dapibus ac facilisis
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img.img-circle(src='img/demo/people/4.jpg', alt='', width='45', height='45')
+                                .media-body.list-group__text
+                                    strong Lion Sampson
+                                    small.list-group__text Integer posuere erat a ante venenatis dapibus posuere velit aliquet
+                            a.list-group-item.media(href='')
+                                .pull-left
+                                    img.list-group__img.img-circle(src='img/demo/people/5.jpg', alt='', width='45', height='45')
+                                .media-body.list-group__text
+                                    strong Thomase Read
+                                    small.list-group__text Donec sed odio dui
+                            .p-10

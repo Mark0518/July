@@ -1,0 +1,174 @@
+header#header
+    .header__top
+        .container
+            ul.top-nav
+                li.dropdown.top-nav__guest
+                    a(data-toggle='dropdown', href='') Register
+                    form.dropdown-menu.stop-propagate
+                        .form-group
+                            input.form-control(type='text', placeholder='Email Address')
+                            i.form-group__bar
+                        .form-group
+                            input.form-control(type='password', placeholder='Password')
+                            i.form-group__bar
+                        .form-group
+                            input.form-control(type='password', placeholder='Confirm Password')
+                            i.form-group__bar
+                        p
+                            small
+                                | By Signing up with Roost, you're agreeing to our 
+                                a(href='') terms and conditions
+                                | .
+                        button.btn.btn-primary.btn-block.m-t-10.m-b-10 Register
+                        .text-center
+                            small
+                                a(href='') Are you an Agent?
+                        .top-nav__auth
+                            span or
+                            div Sign in using
+                            a.mdc-bg-blue-500(href='')
+                                i.zmdi.zmdi-facebook
+                            a.mdc-bg-cyan-500(href='')
+                                i.zmdi.zmdi-twitter
+                            a.mdc-bg-red-400(href='')
+                                i.zmdi.zmdi-google
+                li.dropdown.top-nav__guest
+                    a(data-toggle='dropdown', href='', data-rmd-action='switch-login') Login
+                    .dropdown-menu
+                        .tab-content
+                            form#top-nav-login.tab-pane.active.in.fade
+                                .form-group
+                                    input.form-control(type='text', placeholder='Email Address')
+                                    i.form-group__bar
+                                .form-group
+                                    input.form-control(type='password', placeholder='Password')
+                                    i.form-group__bar
+                                button.btn.btn-primary.btn-block.m-t-10.m-b-10 Login
+                                .text-center
+                                    a(href='#top-nav-forgot-password', data-toggle='tab')
+                                        small Forgot email/password?
+                                .top-nav__auth
+                                    span or
+                                    div Sign in using
+                                    a.mdc-bg-blue-500(href='')
+                                        i.zmdi.zmdi-facebook
+                                    a.mdc-bg-cyan-500(href='')
+                                        i.zmdi.zmdi-twitter
+                                    a.mdc-bg-red-400(href='')
+                                        i.zmdi.zmdi-google
+                            form#top-nav-forgot-password.tab-pane.fade.forgot-password
+                                a.top-nav__back(href='#top-nav-login', data-toggle='tab')
+                                p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                .form-group
+                                    input.form-control(type='text', placeholder='Emaill Address')
+                                    i.form-group__bar
+                                button.btn.btn-warning.btn-block Reset Password
+                li.pull-right.top-nav__icon
+                    a(href='')
+                        i.zmdi.zmdi-facebook
+                li.pull-right.top-nav__icon
+                    a(href='')
+                        i.zmdi.zmdi-twitter
+                li.pull-right.top-nav__icon
+                    a(href='')
+                        i.zmdi.zmdi-google
+                li.pull-right.hidden-xs
+                    span
+                        i.zmdi.zmdi-email
+                        | hello@Roost.com
+                li.pull-right.hidden-xs
+                    span
+                        i.zmdi.zmdi-phone
+                        | 001-541-754-3010
+    .header__main
+        .container
+            a.logo(href='index.html')
+                img(src='img/logo.png', alt='')
+                .logo__text
+                    span Roost
+                    span Material Design Real Estate
+            .navigation-trigger.visible-xs.visible-sm(data-rmd-action='block-open', data-rmd-target='.navigation')
+                i.zmdi.zmdi-menu
+            ul.navigation
+                li.visible-xs.visible-sm
+                    a.navigation__close(data-rmd-action='navigation-close', href='')
+                        i.zmdi.zmdi-long-arrow-right
+                li.navigation__dropdown
+                    a(href='index.html') Home
+                    ul.navigation__drop-menu
+                        li
+                            a(href='after-login.html') After Login
+                        li
+                            a(href='home-alternative.html') Home Alternative
+                        li
+                            a(href='dashboard/index.html') Dashboard
+                li.navigation__dropdown
+                    a.prevent-default(href='') Listings
+                    ul.navigation__drop-menu
+                        li
+                            a(href='listings-grid.html') Grid view
+                        li
+                            a(href='listings-list.html') List view
+                        li
+                            a(href='listings-map.html') Map view
+                        li
+                            a(href='listing-detail.html') Listing Detail
+                li
+                    a(href='submit-property.html') Submit
+                li.navigation__dropdown
+                    a(href='mortgage.html') Mortgages
+                    ul.navigation__drop-menu
+                        li
+                            a(href='mortgage-detail.html') Mortgage Detail
+                        li
+                            a(href='mortgage-detail-reviews.html') Mortgage Reviews
+                        li
+                            a(href='mortgage-detail-disclaimer.html') Mortgage Disclaimer
+                li.navigation__dropdown
+                    a(href='agents.html') Agents
+                    ul.navigation__drop-menu
+                        li
+                            a(href='agent-detail.html') Agent Detail
+                        li
+                            a(href='agent-detail-properties.html') Agent Properties
+                        li
+                            a(href='agent-detail-reviews.html') Agent Reviews
+                li
+                    a(href='contact.html') Contact
+                li.active.navigation__dropdown
+                    a.prevent-default(href='') More
+                    ul.navigation__drop-menu.navigation__drop-menu--right
+                        li
+                            a(href='profile.html') Profile Private
+                        li
+                            a(href='profile-public.html') Profile Public
+                        li.active
+                            a(href='blog.html') Blog
+                        li
+                            a(href='blog-details.html') Blog Detail
+                        li
+                            a(href='neighborhood-guide.html') Neighborhood Guide
+                        li
+                            a(href='faq.html') FAQ
+                        li
+                            a(href='team.html') Team
+                        li
+                            a(href='email/listing-mail.html') Email Template
+                        li
+                            a(href='404.html') Error - 404
+                        li
+                            a(href='empty-page.html') Empty Page
+.action-header
+    .container
+        .action-header__item.action-header__item--search
+            form
+                input.hidden-sm.hidden-xs(type='text', placeholder='Search for articles, comments and people')
+                // For desktop
+                input.visible-xs.visible-sm(type='text', placeholder='Search...')
+                // For desktop
+        .action-header__item.action-header__item--tags.hidden-xs
+            a(href='') #New York
+            a(href='') #Condo for rent
+            a(href='') #Lendors
+            a.hidden-sm(href='') #Mortgage
+            a.hidden-sm(href='') #Sell Property
